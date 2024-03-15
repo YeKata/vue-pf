@@ -1,0 +1,30 @@
+[
+  {
+    "name": "About",
+    "state": true,
+    "kname": "소개",
+    "link": "#About",
+    "number": 1
+  },
+  {
+    "name": "Skill",
+    "state": true,
+    "kname": "기술",
+    "link": "#Skill",
+    "number": 2
+  },
+  {
+    "name": "Project",
+    "state": true,
+    "kname": "프로젝트",
+    "link": "#port",
+    "number": 3
+  },
+  {
+    "name": "Contact",
+    "state": true,
+    "kname": "연락",
+    "link": "#contact",
+    "number": 4
+  }
+]

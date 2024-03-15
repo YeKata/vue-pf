@@ -1,0 +1,673 @@
+/*app.vue*/
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+/*공용*/
+.li-style {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+@media (min-width: 1024px) {
+  .header-box {
+    width: 90vw;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+  }
+
+  .nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .nav-div {
+    width: 23%;
+    text-align: center;
+  }
+  .progressbar {
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    justify-content: center;
+    padding: 0 1px;
+    width: 768px;
+  }
+  .content-box {
+    width: 88%;
+    margin: auto;
+  }
+  .contact-header > span {
+    font-size: 8rem;
+    margin-left: 2rem;
+  }
+
+  .contact-img > img {
+    width: 40vw;
+    height: 80vh;
+  }
+
+  .ul-column > li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .home {
+    display: none;
+  }
+  .header-box {
+    width: 90vw;
+    height: 2rem;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  .nav-div {
+    width: 23%;
+    text-align: center;
+  }
+  .progressbar {
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    justify-content: center;
+    padding: 0 1px;
+    width: 600px;
+  }
+  .contact-header > span {
+    font-size: 5rem;
+    margin-left: 2rem;
+  }
+
+  .contact-img > img {
+    width: 40vw;
+    height: 70vh;
+  }
+
+  .ul-column > li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 649px) {
+  .nav-div {
+    width: 25%;
+    text-align: left;
+  }
+  .nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+
+  .content-box {
+    width: 70%;
+  }
+
+  .progressbar {
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 1px 1px 6px 1px rgba(255, 255, 255, 0.3);
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    justify-content: center;
+    padding: 0 1px;
+    width: 260px;
+  }
+  .contact-header > span {
+    font-size: 3rem;
+    margin-left: 2rem;
+  }
+
+  .contact-img > img {
+    width: 40vw;
+    height: 60vh;
+  }
+
+  .ul-column > li {
+    list-style: none;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+}
+
+.fix {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  color: white;
+  font-family: 'Rowdies', cursive;
+  padding-top: 0.5rem;
+  box-shadow: 1px 0 8px 1px rgba(0, 0, 0, 0.25);
+}
+
+.none {
+  display: none;
+}
+
+/*ModalPage.vue*/
+
+.modal-black {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+  overflow: hidden;
+}
+
+.modal-white {
+  position: fixed;
+  background: white;
+  border-radius: 8px;
+  width: 800px;
+  height: 890px;
+  margin: auto;
+  color: black;
+  z-index: 10;
+}
+
+.modal-white > div {
+  width: 760px;
+  margin-left: 20px;
+}
+
+.modal-side {
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.modal-list-img {
+  background: no-repeat center url('Images/mokoko.png');
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.modal-img {
+  width: 760px;
+  height: 390px;
+  background-size: cover;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.modal-title {
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-decription {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.modal-list-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+}
+
+.modal-list-flex > div {
+  width: 50%;
+  height: 23px;
+}
+/*BasicPage.vue*/
+
+.basic {
+  background: no-repeat center url('Images/cat.jpg');
+  background-size: cover;
+  color: white;
+}
+
+.home {
+  width: 30%;
+  height: 100%;
+  text-align: center;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-div:hover {
+  cursor: default;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.home-line {
+  display: inline-block;
+  width: 4.5rem;
+  height: 5px;
+  background-color: white;
+}
+
+.main {
+  width: 85%;
+  margin-left: 10vw;
+  position: absolute;
+  bottom: 60%;
+}
+
+.text {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.text > span {
+  cursor: default;
+}
+
+.footer {
+  width: 85%;
+  margin-top: 5vh;
+  margin-left: 15rem;
+  padding: 4.5rem;
+}
+
+/*AboutPage.vue*/
+
+.about {
+  background-color: rgb(42, 57, 99);
+}
+
+.about-title {
+  font-family: 'Rowdies', cursive;
+  font-size: 2rem;
+}
+
+.about-border {
+  border-bottom: 1px solid white;
+}
+
+.about-text {
+  width: 85%;
+  margin: auto;
+  padding-top: 5rem;
+  color: white;
+  text-shadow: 0 0 2px rgb(32, 18, 226);
+}
+
+.about-list {
+  list-style-type: circle;
+}
+
+.about-visible:hover {
+  cursor: pointer;
+}
+
+/*StackPage.vue*/
+
+.stack {
+  background-color: rgb(44, 49, 49);
+  color: white;
+}
+.stick > li {
+  padding-top: 4.5rem;
+  font-size: 1.5rem;
+}
+
+.content-header {
+  margin: 0 auto;
+  width: 85%;
+  font-size: 3rem;
+  padding-top: 5rem;
+}
+
+.progress {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.img-box {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+.svg-box {
+  width: 40px;
+  height: 40px;
+}
+
+.svg-box2 {
+  width: 80px;
+  height: 40px;
+}
+.js {
+  background: no-repeat center url('Images/js.svg');
+  background-size: 40px 40px;
+}
+.ts {
+  background: no-repeat center url('Images/ts.svg');
+  background-size: 40px 40px;
+}
+
+.vue {
+  background: no-repeat center url('Images/vue.svg');
+  background-size: 40px 40px;
+}
+
+.nuxt {
+  background: no-repeat center url('Images/nuxt.svg');
+  background-size: 40px 40px;
+}
+
+.html {
+  background: no-repeat center url('Images/html.svg');
+  background-size: 40px 40px;
+}
+
+.css {
+  background: no-repeat center url('Images/css.svg');
+  background-size: 40px 40px;
+}
+
+.react {
+  background: no-repeat center url('Images/react.svg');
+  background-size: 40px 40px;
+}
+
+.mongo {
+  background: no-repeat center url('Images/mongo.svg');
+  background-size: 80px 40px;
+}
+
+.bar1 {
+  width: 70%;
+}
+
+.bar2 {
+  width: 60%;
+}
+
+.bar3 {
+  width: 20%;
+}
+
+.bar4 {
+  width: 40%;
+}
+
+.li-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.percent {
+  align-items: center;
+  -webkit-animation: progress 4s linear;
+  animation: progress 3s linear forwards;
+  background: linear-gradient(90deg, #8f91f7, #3033ee);
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  height: 30px;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.percent-text {
+  color: white;
+  font-size: 1rem;
+}
+
+/*PortPage.vue*/
+.port {
+  background-color: rgb(146, 161, 245);
+  color: white;
+  overflow: auto;
+}
+
+.pf-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.port-title {
+  text-align: center;
+}
+
+.port-container {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+}
+
+.img-slide {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.black-img {
+  filter: grayscale(100%);
+}
+
+.port-thum-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+  align-items: center;
+}
+
+.port-thum {
+  margin: 1rem;
+}
+
+.port-modal {
+  position: absolute;
+  margin-top: 200px;
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .img-slide {
+    width: 300px;
+    height: 300px;
+  }
+  .slide-img {
+    width: 100%;
+    height: 100%;
+  }
+  .port-thum-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .img-slide {
+    width: 300px;
+    height: 300px;
+  }
+  .slide-img {
+    width: 100%;
+    height: 100%;
+  }
+  .port-thum-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 649px) {
+  .img-slide {
+    width: 250px;
+    height: 300px;
+  }
+  .slide-img {
+    width: 100%;
+    height: 100%;
+  }
+  .port-thum-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 530px;
+    align-items: center;
+  }
+
+  .port-thum {
+    margin: 0.3rem;
+  }
+
+  .port-modal {
+    position: absolute;
+    margin-top: 200px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+  }
+}
+/*ContactPage.vue*/
+.contact {
+  background-color: rgb(171, 173, 241);
+  color: black;
+}
+
+.contact-box {
+  padding-top: 5rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact-content {
+  color: white;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contact-img {
+  width: 40%;
+  height: 80vh;
+  background: no-repeat center url('Images/contact.jpg');
+  background-size: 100% 100%;
+}
+.contact-list {
+  height: 50vh;
+}
+
+.ul-column {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.li-name {
+  border-bottom: 1px solid white;
+}
+
+.page-enter-from {
+  opacity: 0;
+}
+
+.page-leave-active {
+  transition: all 1s ease-in-out;
+}
+.page-enter-active {
+  transition: all 1.8s ease-in-out;
+}
+.page-leave-to {
+  opacity: 0;
+}
+
+.modal-enter-from {
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.modal-enter-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-leave-active {
+  transition: all 0.5s ease-in-out;
+}
+
+.modal-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}
