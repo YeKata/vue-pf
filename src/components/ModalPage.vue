@@ -41,8 +41,9 @@
           </div>
         </div>
       </div>
+      <b class="modal-close-btn" @click="closeModal()">x</b>
     </div>
-    <div class="modal-side" @click="closeModal()"></div>
+    <div class="modal-side" @click="closeModal()" />
   </div>
 </template>
 
@@ -51,14 +52,10 @@ import { useCounterStore } from '@/stores/counter'
 import link from '@/assets/link.json'
 const store = useCounterStore()
 const n = store.pjNum
+
 const closeModal = () => {
   store.modalControll()
 }
 </script>
 
-<style scoped>
-.modal-site {
-  display: flex;
-  align-items: center;
-}
-</style>
+<style scoped></style>

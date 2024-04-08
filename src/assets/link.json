@@ -1,23 +1,7 @@
 [
   {
-    "name": "로아YS",
-    "img": "../src/assets/images/LoaYS.png",
-    "description": "Vue,TypeScript, LostArk Open API를 활용한 로스트아크 전투정보 검색 사이트입니다. 아직 완성 단계는 아니며 지속적으로 업데이트 및 기능 추가중입니다.",
-    "skill": ["Vue", "Router", "TypeScript", "Rest API", "Pinia"],
-    "site": "https://yekata.github.io/LoaYS/",
-    "github": "https://github.com/YeKata/-YS-Loa"
-  },
-  {
-    "name": "뷰쇼핑",
-    "img": "../src/assets/images/ms.png",
-    "description": "Vue,TypeScript를 활용한 쇼핑몰 사이트 입니다. 현재는 Pinia를 이용하여 만들어졌지만 차후에 DB기반으로 변경할 계획입니다.",
-    "skill": ["Vue", "Router", "TypeScript", "Pinia"],
-    "site": "https://yekata.github.io/myshopping/",
-    "github": "https://github.com/YeKata/MY-shopping"
-  },
-  {
     "name": "YSJ_PF",
-    "img": "../src/assets/images/YS-PF.png",
+    "img": "../assets/images/YS-PF.png",
     "description": "Vue,TypeScript를 활용한 포트폴리오 사이트 입니다.",
     "skill": ["Vue", "Router", "TypeScript", "Pinia"],
     "site": "https://yekata.github.io/",
@@ -25,15 +9,15 @@
   },
   {
     "name": "투두 리스트",
-    "img": "../src/assets/images/rt.png",
-    "description": "React,TypeScript를 활용한 투두 리스트 입니다.",
+    "img": "../assets/images/rt.png",
+    "description": "React,TypeScript를 활용한 투두 리스트 입니다. 엔터 버튼 혹은 +버튼을 통해 작성할 수 있고 체크항목만 삭제 및 모두 삭제 기능이 구현되어 있습니다.",
     "skill": ["React", "TypeScript", "Zustand"],
     "site": "https://yekata.github.io/rt/",
     "github": "https://github.com/YeKata/React-todo"
   },
   {
     "name": "뉴스앱",
-    "img": "../src/assets/images/v-news.png",
+    "img": "../assets/images/v-news.png",
     "description": "Vue,TypeScript를 활용한 뉴스앱 입니다.",
     "skill": ["Vue", "Router", "TypeScript", "Pinia"],
     "site": "https://yekata.github.io/news/#/news",
@@ -41,10 +25,26 @@
   },
   {
     "name": "뷰스타그램",
-    "img": "../src/assets/images/v-star.png",
-    "description": "Vue,TypeScript를 활용한 뷰스타그램 입니다.",
+    "img": "../assets/images/v-star.png",
+    "description": "Vue,TypeScript를 활용한 인스타그램 입니다. 좋아요, 댓글달기, 게시글 삭제, 포스트 작성 등의 기능이 구현되어 있습니다.",
     "skill": ["Vue", "Router", "TypeScript", "Pinia"],
     "site": "https://yekata.github.io/vstar/",
     "github": "https://github.com/YeKata/vuestar-pinia"
+  },
+  {
+    "name": "뷰쇼핑",
+    "img": "../assets/images/ms.png",
+    "description": "Vue,TypeScript를 활용한 쇼핑몰 사이트 입니다. 현재는 Pinia를 이용하여 만들어졌지만 차후에 DB기반으로 변경할 계획입니다.",
+    "skill": ["Vue", "Router", "TypeScript", "Pinia"],
+    "site": "https://yekata.github.io/myshopping/",
+    "github": "https://github.com/YeKata/MY-shopping"
+  },
+  {
+    "name": "로아YS",
+    "img": "../assets/images/LoaYS.png",
+    "description": "Vue,TypeScript, LostArk Open API를 활용한 로스트아크 전투정보 검색 사이트입니다. 아직 완성 단계는 아니며 지속적으로 업데이트 및 기능 추가중입니다.",
+    "skill": ["Vue", "Router", "TypeScript", "Rest API", "Pinia"],
+    "site": "https://yekata.github.io/LoaYS/",
+    "github": "https://github.com/YeKata/-YS-Loa"
   }
 ]

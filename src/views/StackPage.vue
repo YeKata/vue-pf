@@ -1,8 +1,8 @@
 <template>
-  <div class="container stack" @wheel="store.wheel()">
+  <div class="container stack" :class="store.screenMode ? 'container-night' : 'container-light'">
     <div class="base">
       <div class="content-header">
-        <span>Skill</span>
+        <span>My Skill</span>
       </div>
       <div class="content-box">
         <ol class="li-style stick">
@@ -13,7 +13,10 @@
                 &
                 <div class="ts svg-box" />
               </div>
-              <div class="progressbar">
+              <div
+                class="progressbar"
+                :class="store.screenMode ? 'progress-night' : 'progress-light'"
+              >
                 <div class="progress bar1">
                   <div class="percent">
                     <span class="percent-text">70</span>
@@ -29,7 +32,10 @@
                 &
                 <div class="nuxt svg-box" />
               </div>
-              <div class="progressbar">
+              <div
+                class="progressbar"
+                :class="store.screenMode ? 'progress-night' : 'progress-light'"
+              >
                 <div class="progress bar2">
                   <div class="percent">
                     <span class="percent-text">60</span>
@@ -45,7 +51,10 @@
                 &
                 <div class="css svg-box" />
               </div>
-              <div class="progressbar">
+              <div
+                class="progressbar"
+                :class="store.screenMode ? 'progress-night' : 'progress-light'"
+              >
                 <div class="progress bar2">
                   <div class="percent">
                     <span class="percent-text">60</span>
@@ -59,10 +68,13 @@
               <div class="img-box">
                 <div class="react svg-box" />
               </div>
-              <div class="progressbar">
+              <div
+                class="progressbar"
+                :class="store.screenMode ? 'progress-night' : 'progress-light'"
+              >
                 <div class="progress bar3">
                   <div class="percent">
-                    <span class="percent-text">20</span>
+                    <span class="percent-text">40</span>
                   </div>
                 </div>
               </div>
@@ -73,7 +85,10 @@
               <div class="img-box">
                 <div class="mongo svg-box2" />
               </div>
-              <div class="progressbar">
+              <div
+                class="progressbar"
+                :class="store.screenMode ? 'progress-night' : 'progress-light'"
+              >
                 <div class="progress bar4">
                   <div class="percent">
                     <span class="percent-text">40</span>
